@@ -3,9 +3,6 @@ import {
   ArrowRight, 
   Play, 
   Star,
-  Car,
-  Wrench,
-  Shield,
   Clock,
   Users,
   Award

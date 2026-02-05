@@ -42,10 +42,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', color: 'hover:text-blue-600' },
-    { icon: Instagram, href: '#', color: 'hover:text-pink-600' },
-    { icon: Twitter, href: '#', color: 'hover:text-sky-500' },
-    { icon: Youtube, href: '#', color: 'hover:text-red-600' }
+    { icon: Facebook, href: 'https://facebook.com', color: 'hover:text-blue-600' },
+    { icon: Instagram, href: 'https://instagram.com', color: 'hover:text-pink-600' },
+    { icon: Twitter, href: 'https://twitter.com', color: 'hover:text-sky-500' },
+    { icon: Youtube, href: 'https://youtube.com', color: 'hover:text-red-600' }
   ];
 
   const achievements = [
@@ -165,6 +165,8 @@ export default function Footer() {
                   <a
                     key={index}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`text-gray-400 ${social.color} transition-colors p-2 bg-gray-800 rounded-lg hover:bg-gray-700`}
                   >
                     <social.icon className="w-5 h-5" />
@@ -235,15 +237,15 @@ export default function Footer() {
             </div>
             
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors font-['Outfit']">
+              <button className="text-gray-400 hover:text-white transition-colors font-['Outfit']">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors font-['Outfit']">
+              </button>
+              <button className="text-gray-400 hover:text-white transition-colors font-['Outfit']">
                 Terms of Service
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors font-['Outfit']">
+              </button>
+              <button className="text-gray-400 hover:text-white transition-colors font-['Outfit']">
                 Service Agreement
-              </a>
+              </button>
             </div>
           </div>
 
