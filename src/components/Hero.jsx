@@ -33,7 +33,7 @@ export default function Hero() {
 
             {/* Main Heading */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight font-['Outfit']">
-              We are building it
+             It is now
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500 block">bigger, better</span>
               <span className="text-gray-700">than before.</span>
             </h1>
@@ -91,14 +91,18 @@ export default function Hero() {
           <div className="relative">
             <div className="relative bg-gradient-to-br from-red-600 to-orange-600 rounded-2xl p-8 shadow-2xl animate-pulse-slow hover:scale-105 transition-all duration-500">
               {/* Placeholder for garage image */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center animate-fade-in-up" style={{animationDelay: '0.3s'}}>
-                <div className="w-full h-64 bg-white/20 rounded-lg mb-6 flex items-center justify-center hover:bg-white/30 transition-all duration-300">
-                  <div className="text-white animate-float">
-                    <Car className="w-16 h-16 mx-auto mb-4 animate-bounce" />
-                    <p className="text-lg font-semibold font-['Outfit']">Modern Auto Facilities</p>
-                  </div>
-                </div>
-              </div>
+<div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+  <div className="relative w-full h-96 group">
+    <img 
+      src="/images/garage-cars.jpeg" 
+      alt="Modern Auto Facilities" 
+      className="w-full h-full object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg flex items-end justify-center pb-6">
+      <p className="text-lg font-semibold text-white font-['Outfit']">Modern Auto Facilities</p>
+    </div>
+  </div>
+</div>
 
               {/* Floating Service Cards */}
               <div className="absolute -top-4 -left-4 bg-white rounded-lg shadow-lg p-4 transform rotate-3 animate-bounce hover:rotate-6 hover:scale-110 transition-all duration-300 animate-fade-in-up" style={{animationDelay: '0.5s'}}>

@@ -37,7 +37,7 @@ export default function Header() {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="w-3 h-3" />
-              <span>024 956 7725</span>
+              <span>020 314 4536</span>
             </div>
             <div className="flex items-center space-x-2">
               <MessageCircle className="w-3 h-3" />
@@ -67,12 +67,16 @@ export default function Header() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-br from-red-600 to-orange-500 p-2 rounded-lg">
-                <Car className="w-6 h-6 text-white" />
-              </div>
+<div className="relative w-14 h-14">
+  <img 
+    src="/images/autoshop-logo.jpeg" 
+    alt="Regas Autoshop Logo" 
+    className="w-full h-full object-contain"
+  />
+</div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900 font-['Outfit']">Regas Autoshop</h1>
-                <p className="text-xs text-red-600 font-medium font-['Outfit']">Building it bigger, better than before</p>
+                <p className="text-xs text-red-600 font-medium font-['Outfit']">Service and Maintenace Masters</p>
               </div>
             </div>
 
