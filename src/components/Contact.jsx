@@ -4,11 +4,8 @@ import {
   MessageCircle,
   MapPin,
   Clock,
-  Mail,
   Send,
   Star,
-  Car,
-  CheckCircle
 } from "lucide-react";
 
 export default function Contact() {
